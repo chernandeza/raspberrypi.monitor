@@ -44,6 +44,9 @@ public class SystemInfoDTO {
   private Long cpuFrequency;
   @JsonProperty
   private String cpuPart;
+  @JsonProperty
+  private String osName;
+  
 
   public static class BoardTypeSerializer extends JsonSerializer<BoardType> {
 

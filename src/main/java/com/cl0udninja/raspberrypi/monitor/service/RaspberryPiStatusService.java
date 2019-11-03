@@ -37,6 +37,7 @@ public class RaspberryPiStatusService {
     systemInfo.setIpAddresses(new HashSet<String>(CollectionUtils.<String>arrayToList(NetworkInfo.getIPAddresses())));
     systemInfo.setCpuFrequency(SystemInfo.getClockFrequencyArm());
     systemInfo.setCpuPart(SystemInfo.getCpuPart());
+    systemInfo.setOsName(SystemInfo.getOsName());
 
     log.debug(String.format("System information: %s", systemInfo));
     return systemInfo;
